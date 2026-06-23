@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: import.meta.env.https://banking-app-production-2848.up.railway.app/apic || '/api',
+  baseURL: import.meta.env.VITE_API_URL || '/api',
 })
 
 // Automatically attach JWT token to every request
